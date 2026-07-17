@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braketime Bikers</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <header>
+      <h1>Braketime Bikers</h1>
+    <nav>
+          <button class="tab-btn active" data-tab="orders">Orders</button>button>
+          <button class="tab-btn" data-tab="riders">Riders</button>button>
+          <button class="tab-btn" data-tab="vendors">Vendors</button>button>
+          <button class="tab-btn" data-tab="bikes">Bike Fleet</button>button>
+          <button class="tab-btn" data-tab="admin">Admin</button>button>
+    </nav>
+  </header>
+
+  <main>
+      <section id="orders" class="tab-panel active">
+            <h2>Delivery Orders</h2>
+            <form id="order-form">
+                    <label>Vendor
+                            <select id="order-vendor"></select>select>
+                    </label>
+                  <label>Customer / office name
+                          <input type="text" id="order-customer" required>
+                  </label>
+                  <label>Drop-off location
+                          <input type="text" id="order-dropoff" required>
+                  </label>
+                  <button type="submit">Post delivery order</button>button>
+            </form>form>
+          <div id="orders-list"></div>div>
+      </section>section>
+  
+    <section id="riders" class="tab-panel">
+        <h2>Become a rider</h2>
+        <form id="rider-form">
+              <label>Full name
+                      <input type="text" id="rider-name" required>
+              </label>
+              <label>Phone number
+                      <input type="tel" id="rider-phone" required>
+              </label>
+              <label>Ghana Card number (placeholder field only, not verified here)
+                      <input type="text" id="rider-ghana-card" placeholder="e.g. GHA-000000000-0" required>
+              </label>
+              <label>
+                        <input type="checkbox" id="rider-has-bike"> I have my own bike
+              </label>
+                <button type="submit">Sign up</button>button>
+        </form>form>
+          <p class="hint">New riders are reviewed and manually certified by an admin before they can accept deliveries or check out a company bike.</p>p>
+          <div id="riders-list"></div>div>
+    </section>section>
+
+      <section id="vendors" class="tab-panel">
+            <h2>Partner vendors</h2>
+            <div id="vendors-list"></div>div>
+      </section>section>
+
+      <section id="bikes" class="tab-panel">
+            <h2>Company bike fleet</h2>
+            <p class="hint">Certified riders without their own bike can check out an available company bike below.</p>p>
+            <div id="checkout-box"></div>div>
+            <div id="bikes-list"></div>div>
+      </section>section>
+
+      <section id="admin" class="tab-panel">
+            <h2>Admin panel</h2>
+            <h3>Riders pending certification</h3>
+            <div id="pending-riders"></div>div>
+            <h3>Bike fleet management</h3>
+            <form id="bike-form">
+                    <label>Bike ID
+                              <input type="text" id="bike-id" required>
+                    </label>
+                    <button type="submit">Add bike</button>button>
+            </form>form>
+            <div id="admin-bikes-list"></div>div>
+      </section>section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>html>
+
+              </label></label>
+  </main>
+    </nav></h1>
+  </header>
+</body></title>
+  </head>
